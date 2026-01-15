@@ -1,0 +1,150 @@
+============================================================
+            AIRLINE RESERVATION SYSTEM
+============================================================
+
+Project Description:
+--------------------
+This project is a menu-driven Airline Reservation System
+developed in the C programming language using binary file
+handling (.dat files).
+
+The system allows users to book airline tickets, select seats,
+generate bills, modify or cancel reservations, while providing
+an admin panel for flight management and financial reporting.
+
+The project focuses on real-world problem solving using:
+- Structures
+- File handling
+- Input validation
+- Modular programming
+
+
+------------------------------------------------------------
+FEATURES
+------------------------------------------------------------
+
+USER MODULE:
+------------
+1. View available flights
+2. Book airline tickets
+3. Select seats with availability checking
+4. Generate ticket/bill using PNR
+5. Modify existing reservations
+6. Cancel reservations
+
+ADMIN MODULE:
+-------------
+1. Secure admin login
+2. Add new flights
+3. View all flights
+4. Delete flights
+5. View all reservations
+6. Generate financial report
+   - Total bookings
+   - Total revenue
+   - Average fare
+
+
+------------------------------------------------------------
+FILES USED
+------------------------------------------------------------
+
+flights.dat
+-----------
+Stores flight information in binary format.
+Fields include:
+- Flight Number
+- Destination
+- Departure City
+- Departure Time
+- Fare
+- Available Seats
+
+reservations.dat
+----------------
+Stores passenger reservation details in binary format.
+Fields include:
+- Passenger Name
+- Age
+- Gender
+- Seat Number
+- PNR
+- Flight Number
+- Fare
+- Payment Method
+- Booking Status
+
+
+------------------------------------------------------------
+TECHNOLOGIES USED
+------------------------------------------------------------
+
+Programming Language : C
+File Handling        : Binary (.dat files)
+Concepts Used        :
+- Structures
+- Functions
+- File I/O (fread, fwrite)
+- Input validation
+- Menu-driven programming
+
+
+------------------------------------------------------------
+HOW TO RUN THE PROGRAM
+------------------------------------------------------------
+
+1. Compile the program:
+   gcc airline.c -o airline
+
+2. Run the executable:
+   ./airline
+
+3. On first run, the program will automatically create:
+   - flights.dat
+   - reservations.dat
+
+4. Use Admin Menu to add flights before booking tickets.
+
+
+------------------------------------------------------------
+ADMIN LOGIN DETAILS
+------------------------------------------------------------
+
+Admin Password: admin123
+
+(Note: Password is hardcoded for academic purposes only)
+
+
+------------------------------------------------------------
+IMPORTANT NOTES
+------------------------------------------------------------
+
+- .dat files are binary files and should not be edited manually.
+- Flights must be added by the admin before users can book tickets.
+- Seat availability is checked dynamically to prevent double booking.
+- PNR is generated automatically and is unique per booking.
+
+
+------------------------------------------------------------
+LIMITATIONS
+------------------------------------------------------------
+
+- No user authentication system (single shared user space).
+- No networking or database integration.
+- Designed for academic and learning purposes only.
+
+
+------------------------------------------------------------
+DEVELOPER DETAILS
+------------------------------------------------------------
+
+Name    : ADITYA BHARDWAJ
+Course  : B TECH
+Branch  : CSE
+Section : D2
+Roll No : 07
+
+
+------------------------------------------------------------
+END OF README
+------------------------------------------------------------
